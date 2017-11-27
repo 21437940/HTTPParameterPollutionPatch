@@ -1,0 +1,431 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"MS Mincho";
+	mso-font-kerning:16.0pt;
+	mso-fareast-language:JA;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"MS Mincho";
+	mso-ascii-font-family:"MS Mincho";
+	mso-fareast-font-family:"MS Mincho";
+	mso-hansi-font-family:"MS Mincho";
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:16.0pt;
+	mso-fareast-language:JA;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;
+	font-weight:bold;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.55pt 56.9pt 70.55pt 56.9pt;
+	mso-header-margin:35.3pt;
+	mso-footer-margin:35.3pt;
+	mso-title-page:yes;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:74865116;
+	mso-list-type:hybrid;
+	mso-list-template-ids:197531764 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Lesson
+Plan Title:</span></b><span style='font-family:"Arial","sans-serif"'> How to
+Perform HTTP Parameter Pollution </span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Concept /
+Topic To Teach:</span></b><span style='font-family:"Arial","sans-serif"'> </span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>This lesson
+teaches how to perform HTTP Parameter Pollution attacks. </span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>How the
+attacks works:</span></b><span style='font-family:"Arial","sans-serif"'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>HTTP Parameter Pollution attack consists of injecting encoded query string delimiters into existing HTTP parameters.</p>
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>If application does not sanitize its inputs, HPP can be used to launch client-side or server-side attacks.</p>
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Attacker may be able to override existing parameter values, inject a new parameter or exploit variables out of a direct reach</p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>General
+Goal(s):</span></b><span style='font-family:"Arial","sans-serif"'> <o:p></o:p></span></p>
+
+<!-- Start Instructions -->
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>
+This lesson focus on HPP client side attack.<br>
+Select a class name from the list and click the "Survey" button, the server will show a form for you to submit your opinion for this course. And also when you submit your opinion server will also display the result to you.<br>
+You should able to use HPP to launch client side attack, the goal is to make a survey result for a class is always a fixed value no matter user choose.<br>
+</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Arial","sans-serif"'>Solution:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Because the
+input is not validated when choose a course to survey, you can inject to pollution HTTP parameter. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Select a course and select survey and then
+submit your survery result, use Tamper Data to check the parameters submit to server during the whole process.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='font-family:
+"Arial","sans-serif";mso-no-proof:yes'><img width=640 height=488
+src="lesson_solutions/HTTPParameterPollution_files/img01.PNG"></span></p>
+
+<p class=MsoCaption>Figure 1: Step 1 - Choose "HTTP Basic" to survey</p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><img width=596 height=599
+src="lesson_solutions/HTTPParameterPollution_files/img02.PNG"></span></p>
+
+<p class=MsoCaption>Figure 2: HTTP Request of Step 1</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><img width=642 height=459
+src="lesson_solutions/HTTPParameterPollution_files/img03.PNG"></span></p>
+
+<p class=MsoCaption>Figure 3: Step 2 - Choose "Good" to submit</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><img width=596 height=599
+src="lesson_solutions/HTTPParameterPollution_files/img04.PNG"></span></p>
+
+<p class=MsoCaption>Figure 4: HTTP Request of Step 2</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><img width=642 height=459
+src="lesson_solutions/HTTPParameterPollution_files/img05.PNG"></span></p>
+
+<p class=MsoCaption>Figure 5: Survey result</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Now inject
+for the course_id 1%26survey_result%3DGood so that the survey result will always be Good.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='font-family:
+"Arial","sans-serif";mso-no-proof:yes'><img width=596 height=599
+src="lesson_solutions/HTTPParameterPollution_files/img06.PNG"></span></p>
+
+<p class=MsoCaption>Figure 6: Inject course_id in Step 1</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><img width=642 height=562
+src="lesson_solutions/HTTPParameterPollution_files/img07.PNG"></span></p>
+
+<p class=MsoCaption>Figure 7: Inject success</p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Now the course has detect your injection success. You can choose a result other than "Good", for example, "Bad" and submit to view the final result.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='font-family:
+"Arial","sans-serif";mso-no-proof:yes'><img width=596 height=599
+src="lesson_solutions/HTTPParameterPollution_files/img08.PNG"></span></p>
+
+<p class=MsoCaption>Figure 8: HTTP Request of submit "Bad" result in injected page</p>
+<p class=MsoCaption>Have you noticed the different between normal condition and the injected page?</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='font-family:
+"Arial","sans-serif";mso-no-proof:yes'><img width=640 height=488
+src="lesson_solutions/HTTPParameterPollution_files/img09.PNG"></span></p>
+
+<p class=MsoCaption>Figure 9: Final survey result</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+<table align='RIGHT' cellspacing='0' width='90%' border='0' cellpadding='0'>
+	<tr>
+		<td valign='MIDDLE' width='100%' align='RIGHT class=MsoNormal' style='font-family:"Arial","sans-serif"'>
+			Solution by EatMilkBoy 
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
